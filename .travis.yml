@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "0.10"
+deploy:
+  provider: heroku
+  api_key:
+    secure: O7nrk8TAoPfrzRVGJmyJvRcZPcjv6G7msSa2BRlvrjLkHSJ40T18Bor6kBgeR3Kp9gPAJGhKAB+FnBn4d25jeH6ePpNUJB+OR2KQRmJSMVTmscZVgzMb5MwttACFrceqJtPoHqXD5LMr5SnuIMWNqz5Rnf0fLiPb6eZhSdvKS4U=
+  app: jamcraft-hubot
+  on:
+    repo: Jam-Craft/Hubot
