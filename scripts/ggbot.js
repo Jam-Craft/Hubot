@@ -1,9 +1,10 @@
-/* Description:
- *  GGGGGGGGGG
- *
- * Commands:
- *  gg - GG
- */
+# Description:
+#  GGGGGGGGGG
+#
+# Commands:
+#  gg - GG
+#
+
 module.exports = function(robot) { // Welcome to hubot xD
     
     //GG!
