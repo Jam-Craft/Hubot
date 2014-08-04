@@ -9,12 +9,12 @@
 module.exports = function(robot) { // Welcome to hubot xD
     
     //GG!
-    robot.hear(/(.*) gg(.*)/i, function(msg){
+    robot.hear(/\bgg\b/i, function(msg){
         msg.send("http://youtu.be/5es0NNtSNCU");
     });
 	
 	//wat
-	robot.hear(/wat/i, function(msg){
+	robot.hear(/\bwat\b/i, function(msg){
 		msg.send("http://www-static.weddingbee.com/pics/292233/Wat8.jpg")
 	})
 	
