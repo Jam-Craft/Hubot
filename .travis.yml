@@ -4,7 +4,7 @@ node_js:
 deploy:
   provider: heroku
   api_key:
-    secure: O7nrk8TAoPfrzRVGJmyJvRcZPcjv6G7msSa2BRlvrjLkHSJ40T18Bor6kBgeR3Kp9gPAJGhKAB+FnBn4d25jeH6ePpNUJB+OR2KQRmJSMVTmscZVgzMb5MwttACFrceqJtPoHqXD5LMr5SnuIMWNqz5Rnf0fLiPb6eZhSdvKS4U=
+    secure: "OBIPAs6cwKObsxMf5bAFQz1/pSqimSr/sxNFOjDFLF1uORGFEh6AUXz7Na++MnvvoasIqM5SaGD+jj0w3W92TRv83igAUpCQIu1YxfFeedfewxlgVxxO0MQa8m0a8Fdu9aYSJQ1y4gCBUxd43iPR/ZybVCd6cJvSZEHJ+5d7DmQ="
   app: jamcraft-hubot
   on:
     repo: Jam-Craft/Hubot
