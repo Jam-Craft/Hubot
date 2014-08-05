@@ -8,3 +8,10 @@ deploy:
   app: jamcraft-hubot
   on:
     repo: Jam-Craft/Hubot
+notifications:
+  irc:
+    channels:
+      - "irc.esper.net#Poppysworld"
+    template:
+      - "%{repository}#%{build_number} (%{commit}) : %{message}"
+      - "Build details: %{build_url}"
