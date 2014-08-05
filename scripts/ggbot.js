@@ -18,7 +18,7 @@ module.exports = function(robot) { // Welcome to hubot xD
 		msg.send("http://www-static.weddingbee.com/pics/292233/Wat8.jpg")
 	});
 	
-    robot.hear(/\g.*((slain by)|(killed by)|(blew up)|(pummeled by)|(drowned)|(died)|(went up in)|(burned to )|(tried to swim in)|(suffocated in a )|(starved to )|(was pricked to)|(hit the ground too)|(fell out of the)|(was shot by)).*/i,function(msg){
+    robot.hear(/.*((slain by)|(killed by)|(blew up)|(pummeled by)|(drowned)|(died)|(went up in)|(burned to )|(tried to swim in)|(suffocated in a )|(starved to )|(was pricked to)|(hit the ground too)|(fell out of the)|(was shot by)).*/i,function(msg){
 	msg.send("GGGGGG");
     });
 	
