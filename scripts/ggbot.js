@@ -19,7 +19,9 @@ module.exports = function(robot) { // Welcome to hubot xD
 	});
 	
     robot.hear(/.*((slain by)|(killed by)|(blew up)|(pummeled by)|(drowned)|(died)|(went up in)|(burned to )|(tried to swim in)|(suffocated in a )|(starved to )|(was pricked to)|(hit the ground too)|(fell out of the)|(was shot by)).*/i,function(msg){
-	msg.send("GGGGGG");
+		if(msg.user.name === "PoppysServer"){
+			msg.send("GGGGGG");
+		}
     });
 	
 	

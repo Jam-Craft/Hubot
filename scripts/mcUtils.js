@@ -3,6 +3,6 @@
 
 module.exports = function(robot) {
 	robot.respond(/behead (.*)/i, function(msg){
-		msg.reply("http://cravatar.eu/helmhead/"+msg.split(" ")[2].trim()+"/600.png");
+		msg.reply("http://cravatar.eu/helmhead/"+msg.message.text.split(" ")[2].trim()+"/600.png");
 	});
 }
