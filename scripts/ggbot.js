@@ -24,5 +24,9 @@ module.exports = function(robot) { // Welcome to hubot xD
 		}
     });
 	
+	//sleepy
+	robot.hear(/\b(bed|sleep|sleepy)\b/i, function(msg){
+		msg.reply("http://img1.wikia.nocookie.net/__cb20110118013105/glee/images/a/aa/SLEEP_IS_FOR_THE_WEAK.jpg");
+	});
 	
 }
