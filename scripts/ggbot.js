@@ -4,6 +4,7 @@
 // Commands:
 //  gg - GG
 //  wat - watman!
+//  
 //
 
 module.exports = function(robot) { // Welcome to hubot xD
@@ -28,5 +29,10 @@ module.exports = function(robot) { // Welcome to hubot xD
 	robot.hear(/\b(bed|sleep|sleepy)\b/i, function(msg){
 		msg.reply("http://img1.wikia.nocookie.net/__cb20110118013105/glee/images/a/aa/SLEEP_IS_FOR_THE_WEAK.jpg");
 	});
+	
+	//destory the eagle
+	robot.hear(/\b(eagle_gunner|brendon)\b/i, function(){
+		msg.reply("You know eagle_gunner isn't a god, right?")
+	})
 	
 }
