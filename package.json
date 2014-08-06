@@ -23,10 +23,18 @@
   "dependencies": {
     "hubot": ">= 2.6.0 < 3.0.0",
     "hubot-scripts": ">= 2.5.0 < 3.0.0",
-    "hubot-irc": "^0.2.7"
+    "hubot-irc": "^0.2.7",
+    "cheerio": "^0.17.0"
   },
   "engines": {
     "node": ">= 0.8.x",
     "npm": ">= 1.1.x"
+  },
+  "devDependencies": {
+    "jasmine-node": "^1.14.5",
+    "hubot-mock-adapter": "^1.0.0"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/jasmine-node --coffee --color test/load.js"
   }
 }
