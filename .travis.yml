@@ -7,7 +7,7 @@ deploy:
     secure: "OBIPAs6cwKObsxMf5bAFQz1/pSqimSr/sxNFOjDFLF1uORGFEh6AUXz7Na++MnvvoasIqM5SaGD+jj0w3W92TRv83igAUpCQIu1YxfFeedfewxlgVxxO0MQa8m0a8Fdu9aYSJQ1y4gCBUxd43iPR/ZybVCd6cJvSZEHJ+5d7DmQ="
   app: jamcraft-hubot
   on:
-    repo: Jam-Craft/Hubot
+    repo: Jam-Craft/JamBot
 notifications:
   irc:
     channels:

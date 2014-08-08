@@ -56,12 +56,12 @@ module.exports = (robot) ->
   robot.respond /help\s*(.*)?$/i, (msg) ->
     cmds = robot.helpCommands()
     filter = msg.match[1]
-
+    
     if filter
       cmds = cmds.filter (cmd) ->
         cmd.match new RegExp(filter, 'i')
       if cmds.length == 0
-        msg.user.send "No available commands match #{filter}"
+        msg.robot.send({user: {name: msg.message.user.name}}, "No available commands match #{filter}")
         return
 
     prefix = robot.alias or robot.name
@@ -71,7 +71,7 @@ module.exports = (robot) ->
 
     emit = cmds.join "\n"
 
-    msg.user.send emit
+    msg.robot.send({user: {name: msg.message.user.name}}, emit)
 
   robot.router.get "/hubot/help", (req, res) ->
     cmds = robot.helpCommands().map (cmd) ->
