@@ -32,7 +32,7 @@ module.exports = function(robot) { // Welcome to hubot xD
 	
 	//destory the eagle
 	robot.hear(/\b(brendon)\b/i, function(msg){
-		msg.reply("You know eagle_gunner isn't a god, right?")
-	})
+		msg.reply("You know eagle_gunner isn't a god, right?");
+	});
 	
 }
